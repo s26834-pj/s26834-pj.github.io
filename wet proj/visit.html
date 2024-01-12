@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Umów wizytę</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+<header>
+  <a href="#" class="logo">logo</a>
+  <nav class="navbar">
+    <a href="index.html">Zakres usług</a>
+    <a href="index.html">Porady</a>
+    <a href="index.html">Kontakt</a>
+    <a href="#">Umów wizytę</a>
+  </nav>
+</header>
+<section class="hero">
+  <div class="container">
+    <h1>Gabinet Weterynaryjny</h1>
+    <h1>Vet<span>Centrum</span></h1>
+    <h2>Najwyższej jakości profesjonalna opieka medyczna i pełne zaangażowanie</h2>
+    <a href="index.html" class="btn-get-started">Dowiedz się więcej</a>
+  </div>
+</section>
+<main>
+  <div class="visit">
+        <div class="container">
+              <div class="appointment-panel">
+                <h2 class="title">Umów wizytę u weterynarza</h2>
+
+                <form id="appointmentForm">
+                  <label for="fullName">Imię i Nazwisko:</label>
+                  <input type="text" id="fullName" name="fullName" required>
+
+                  <label for="visitType">Typ wizyty:</label>
+                  <select id="visitType" name="visitType" required>
+                    <option value="badanie">Badanie</option>
+                    <option value="szczepienie">Szczepienie</option>
+                    <option value="leczenie">Leczenie</option>
+                  </select>
+
+                  <label for="appointmentDate">Data wizyty:</label>
+                  <input type="date" id="appointmentDate" name="appointmentDate" required>
+
+                  <label for="appointmentTime">Godzina wizyty:</label>
+                  <input type="time" id="appointmentTime" name="appointmentTime" required>
+
+                  <button type="submit">Umów wizytę</button>
+                </form>
+              </div>
+      </div>
+  </div>
+</main>
+<script src="main.js"></script>
+</body>
+</html>
