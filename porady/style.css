@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    background-color: white;
+
+}
+
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+img{
+    width: 100%;
+}
+
+.home{
+    width: 100%;
+    min-height: 250px;
+    background: #c08aa4;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-text{
+    color:white;
+    text-align: center;
+}
+.home-title{
+    color: white;
+    font-size:3.5rem;
+}
+.home-subtitle{
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: end;
+    color: white;
+}
+
+header{
+    background-color:white ;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1em;
+}
+
+.logo{
+    font-size: 32px;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.navbar a{
+    position: relative;
+    font-size: 18px;
+    color: #c08aa4;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.navbar a::before{
+    content: '';
+    position: absolute;
+    top:100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #c08aa4;
+    transition: .3s;
+}
+
+.navbar a:hover::before{
+    width: 100%;
+}
+
+
+
+.post-filter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1.5rem;
+    margin-top:2rem !important;
+    padding-bottom: 2rem;
+}
+
+.filter-item{
+    font-size:0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.active-filter{
+    background: #c08aa4;
+    padding: 4px 10px;
+}
+
+.post{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,auto));
+    justify-content:center;
+    gap: 1.5rem;
+}
+
+.post-box{
+    background: white;
+    box-shadow: 0 4px 14px hsl(355deg 25% 15 / 10%);
+}
+
+.post-img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 0.5rem;
+}
+.category{
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color:#c08aa4;
+}
+
+.post-title{
+    font-size:1.3rem;
+    font-weight: 600;
+    color:black;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.post-date{
+    display: flex;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-top: 4px;
+}
+.post-decription{
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    margin: 5px 10px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile-img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    border: 2px solid #c08aa4;
+}
+
+.container{
+    max-width: 1068px;
+    margin: auto;
+    width: 100%;
+}
+
+.profile-name{
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.post-header{
+    width: 100%;
+    height: 500px;
+    background:#c08aa4;
+}
+
+.post-container{
+    max-width: 800px;
+    margin: auto;
+    width: 100%;
+}
+
+.header-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top:4em;
+}
+
+.back-home{
+    color:white;
+    font-size:0.9rem ;
+}
+
+.header-title{
+    width: 90%;
+    font-size: 2.6rem;
+    color:white;
+    text-align: center;
+    margin-bottom:1rem ;
+}
+
+.header-img{
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.post-content{
+    margin-top: 10rem !important;
+}
+
+.sub-headling{
+    font-size:1.2rem;
+}
+.post-text{
+    font-size: 1rem;
+    line-height: 1.7rem;
+    margin:1rem 0;
+    text-align: justify;
+}
+
+@media (max-width:1064px) {
+    .container{
+        margin:0 auto;
+        width: 95%;
+    }
+    .home-text{
+        width: 100%;
+    }
+}
+
+@media (max-width:800px) {
+   .post-container{
+       margin: 0 auto;
+       width: 95%;
+   }
+}
+@media (max-width:400px) {
+    .home-text, .home-subtitle{
+        width: 100%;
+    }
+}
+
+
